@@ -22,11 +22,5 @@
     "price": "200",
     "thumbnail": "http://discodurowesterhouse",
     "id": 4
-  },
-  {
-    "title": "aaa",
-    "price": "300",
-    "thumbnail": "aaa",
-    "id": 5
   }
 ]

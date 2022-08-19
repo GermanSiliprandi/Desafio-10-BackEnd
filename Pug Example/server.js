@@ -4,6 +4,7 @@ const PORT = 8080;
 const productos = require("./desafioClase4");
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(`/static`, express.static(`public`));
 
 const server = app.listen(PORT, (err) => {
     if (err) {
@@ -15,7 +16,7 @@ const server = app.listen(PORT, (err) => {
 
 app.set(`views`, `./views`);
 app.set(`view engine`, `pug`);
-app.set(__dirname + `./static`, express.static(`public`));
+
 
 app.get(`/products`, async (req, res) => {
     const allProducts = await productos.getAll();
@@ -25,8 +26,7 @@ app.get(`/products`, async (req, res) => {
 app.post("/products", async (req, res) => {
     const reqString = JSON.stringify(req.body);
     const reqParse = JSON.parse(reqString);
-    const newId = await productos.save(reqParse);
-    reqParse.id = newId;
+    await productos.save(reqParse);
     const allProducts = await productos.getAll();
     res.render(`pages/index.pug`, {allProducts: allProducts});
 });
