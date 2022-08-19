@@ -1,0 +1,9 @@
+<ul>
+    <% allProducts.forEach((product) => { %>
+        <li>
+            <p><strong><%= product.title %></strong></p>
+            <p>Price:<%= product.price %></p>
+            <p>Link:<%= product.thumbnail %></p>
+        </li>
+    <% }); %>
+</ul>

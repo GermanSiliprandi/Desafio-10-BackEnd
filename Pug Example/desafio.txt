@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Teclado Logitech",
+    "price": "100",
+    "thumbnail": "https://tecladologitech",
+    "id": 1
+  },
+  {
+    "title": "Mouse Logitech",
+    "price": "70",
+    "thumbnail": "https://mouselogitech",
+    "id": 2
+  },
+  {
+    "title": "Auriculares Logitech",
+    "price": "150",
+    "thumbnail": "http://auricularesLogitech",
+    "id": 3
+  },
+  {
+    "title": "Disco Duro Westerhouse",
+    "price": "200",
+    "thumbnail": "http://discodurowesterhouse",
+    "id": 4
+  },
+  {
+    "title": "aaa",
+    "price": "300",
+    "thumbnail": "aaa",
+    "id": 5
+  }
+]
